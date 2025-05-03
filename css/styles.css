@@ -1,12 +1,24 @@
 body{
     background-color: black;
+    color: white;
 }
 
-h1,h2,h3,.col{
-    color:white
+h1,h2,h3,h4{
+   font-family: 'Cormorant Garamond', serif;
 }
+p, a{
+    font-family: 'Noto Sans', serif;
+}
+.container-menu{
+    border: 2px solid rgb(132, 151, 97);
+    padding: 4vw;
 
+}
 .container-menu img{
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 12vw;
+}
+.botao-ver-mais{
+    border: 2px solid rgb(132, 151, 97);
+    padding: 1vw;
 }
