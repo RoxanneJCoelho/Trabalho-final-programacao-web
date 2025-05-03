@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+}
+
+h1,h2,h3,.col{
+    color:white
+}
+
+.container-menu img{
+    width: 100%;
+    height: auto;
+}
