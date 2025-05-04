@@ -1,0 +1,42 @@
+body {
+    background-color: #000;
+    color: white;
+    font-family: 'Georgia', serif;
+  }
+
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+
+  .form-container {
+    background-color: #111;
+    border: 2px solid #444;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .form-control, textarea {
+    background-color: #ddd;
+  }
+
+  .btn-enviar {
+    background-color: #eee;
+    color: red;
+    font-weight: bold;
+  }
+
+  .info {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .logo {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .text-end {
+      text-align: center !important;
+    }
+  }

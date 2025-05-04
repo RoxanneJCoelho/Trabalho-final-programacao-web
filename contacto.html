@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto - Yume</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container py-5">
+    <div class="row mb-4">
+      <div class="col-md-6 d-flex align-items-center">
+        <img src="https://i.imgur.com/h3nJGpE.png" alt="Yume Logo" class="logo me-3"> <!-- Exemplo de logo -->
+        <div>
+          <h5 class="mb-1">Tem alguma dúvida?</h5>
+          <p>- Deixe aqui a sua mensagem.</p>
+        </div>
+      </div>
+      <div class="col-md-6 text-end d-none d-md-block">
+        <nav>
+          <a href="#" class="text-light me-3">Menu</a>
+          <a href="#" class="text-light me-3">Reserva</a>
+          <a href="#" class="text-light me-3">Galeria</a>
+          <a href="#" class="text-light">Contacto</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Formulário -->
+      <div class="col-md-6">
+        <div class="form-container">
+          <h5 class="mb-3">Formulário de Contacto</h5>
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome:</label>
+              <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="assunto" class="form-label">Assunto:</label>
+              <input type="text" class="form-control" id="assunto" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem:</label>
+              <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-enviar">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Informações de Contacto -->
+      <div class="col-md-6 info">
+        <h5>Morada:</h5>
+        <p>
+          Rua da Alegria, nº543<br>
+          5555-555 Porto - Portugal
+        </p>
+
+        <h5>Contactos:</h5>
+        <p>
+          911111111<br>
+          yume@gmail.com
+        </p>
+
+        <h5>Horários de funcionamento:</h5>
+        <p>
+          Seg a Sex<br>
+          11h30 - 15h00<br>
+          18h00 - 21h00
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
