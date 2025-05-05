@@ -1,3 +1,4 @@
+/* BASE */
 body {
     background-color: rgb(0, 0, 0);
     font-family: 'Noto Sans JP', sans-serif;
@@ -14,10 +15,16 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
   }
   
-  /* Header */
+  /* HEADER */
   header .logo img {
     width: 200px;
     height: auto;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  header .logo a {
+    display: inline-block;
   }
   
   header small {
@@ -25,7 +32,7 @@ body {
     color: #ccc;
   }
   
-  /* Menu */
+  /* NAVBAR */
   .navbar-nav .nav-link {
     font-family: 'Cormorant Garamond', serif;
     color: white !important;
@@ -40,45 +47,12 @@ body {
     padding: 0.25rem;
   }
   
-  .navbar-toggler-icon {
-    background-image: none;
-    position: relative;
-    width: 30px;
-    height: 20px;
-    display: inline-block;
-  }
-  
-  .navbar-toggler-icon::before,
-  .navbar-toggler-icon::after,
-  .navbar-toggler-icon div {
-    content: "";
-    background-color: white;
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    transition: all 0.3s ease;
-  }
-  
-  .navbar-toggler-icon::before {
-    top: 0;
-  }
-  
-  .navbar-toggler-icon::after {
-    bottom: 0;
-  }
-  
-  .navbar-toggler-icon div {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
   .navbar-collapse {
     background-color: #000;
     padding: 1rem;
   }
   
-  /* Carrossel */
+  /* CARROSSEL */
   .carousel-container img {
     max-height: 300px;
     object-fit: cover;
@@ -86,21 +60,22 @@ body {
     width: 100%;
   }
   
-  /* Seções */
+  /* SEÇÕES */
   section.container {
     max-width: 800px;
     margin: 0 auto;
   }
   
-  /* Footer */
+  /* FOOTER */
   footer {
     border-top: 1px solid #444;
     font-size: 0.9rem;
     color: #aaa;
+    text-align: center;
   }
   
   footer .social-icons {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   
   footer .social-icons img.social-icon {
@@ -109,6 +84,7 @@ body {
     margin: 0 6px;
     filter: brightness(200%);
     transition: transform 0.2s ease, filter 0.2s ease;
+    cursor: pointer;
   }
   
   footer .social-icons img.social-icon:hover {
@@ -116,13 +92,17 @@ body {
     filter: brightness(250%);
   }
   
-  /* Responsividade */
+  /* RESPONSIVIDADE */
   @media (max-width: 768px) {
     header {
       flex-direction: row;
       justify-content: space-between;
       align-items: center !important;
       text-align: left;
+    }
+  
+    header .logo img {
+      width: 140px;
     }
   
     .navbar-nav {
@@ -168,5 +148,9 @@ body {
     footer .social-icons img.social-icon {
       width: 22px;
       height: 22px;
+    }
+  
+    header .logo img {
+      width: 160px;
     }
   }
