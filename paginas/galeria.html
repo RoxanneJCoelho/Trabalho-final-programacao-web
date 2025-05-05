@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria - YUME</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Sans+JP&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/galeria.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="container py-4 d-flex justify-content-between align-items-center">
+    <div class="logo d-flex flex-column align-items-start">
+        <a href="../index.html">
+          <img src="../imagens/icons/yume-logo.png" alt="Logo Yume" />
+        </a>
+      </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark p-0">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"><div></div></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav text-end">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Reserva</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- GALERIA -->
+  <div class="container py-5">
+    <h1 class="text-center mb-5">Galeria</h1>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="galeria-box" data-bs-toggle="modal" data-bs-target="#modalPratos">
+          <img src="../imagens/sushi1.jpg" alt="Pratos" class="img-fluid">
+          <div class="galeria-label">Pratos</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="galeria-box" data-bs-toggle="modal" data-bs-target="#modalRestaurante">
+          <img src="../imagens/sushi3.jpg" alt="Restaurante" class="img-fluid">
+          <div class="galeria-label">Restaurante</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PRATOS -->
+  <div class="modal fade" id="modalPratos" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Pratos</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-sm-6 col-md-4"><img src="../imagens/sushi1.jpg" class="img-fluid rounded"></div>
+            <div class="col-sm-6 col-md-4"><img src="../imagens/sushi2.jpg" class="img-fluid rounded"></div>
+            <div class="col-sm-6 col-md-4"><img src="../imagens/sushi4.png" class="img-fluid rounded"></div>
+            <div class="col-sm-6 col-md-4"><img src="../imagens/sushi5.png" class="img-fluid rounded"></div>
+            <div class="col-sm-6 col-md-4"><img src="../imagens/sushi6.png" class="img-fluid rounded"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL RESTAURANTE -->
+  <div class="modal fade" id="modalRestaurante" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Restaurante</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-sm-6 col-md-4"><img src="../imagens/sushi3.jpg" class="img-fluid rounded"></div>
+            <div class="col-sm-6 col-md-4"><img src="../imagens/sushi2.jpg" class="img-fluid rounded"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="text-center text-white py-4">
+    <div class="social-icons mb-2">
+      <a href="#"><img src="../imagens/facebook-icon.png" alt="Facebook" class="me-2 social-icon"></a>
+      <a href="#"><img src="../imagens/instagram-icon.png" alt="Instagram" class="me-2 social-icon"></a>
+      <a href="#"><img src="../imagens/x-icon.png" alt="X" class="social-icon"></a>
+    </div>
+    <small>2025 yume - Todos os direitos reservados</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
