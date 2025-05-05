@@ -6,7 +6,6 @@
 //   });
 
 
-
   // Pegar o formulário
 const form = document.querySelector('form');
 
