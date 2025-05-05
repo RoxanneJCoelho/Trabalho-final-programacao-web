@@ -9,10 +9,7 @@ body {
   h1, h2, h3, h4 {
     font-family: 'Cormorant Garamond', serif;
   }
-  
-  p, a, small, li, button, nav, span {
-    font-family: 'Noto Sans JP', sans-serif;
-  }
+
   
   /* Header */
   header .logo img {
