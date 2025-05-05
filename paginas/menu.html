@@ -26,24 +26,42 @@
     
 </head>
 <body>
-    <header>
-        <img src="../assets/icons/yume-logo.png" alt="yume-logo" href="../index.html">
-        <a href="#menu">Menu</a>
-        <a href="#menu">Reserva</a>
-        <a href="#menu">Galeria</a>
-        <a href="#menu">Contacto</a>
-        <h1>Menu</h1>
-        <h2>Descubra os nossos pratos e embarque numa experiência gastronómica que honra a essência da culinária japonesa.</h2>
-    </header>
+    <!-- Header com logo à esquerda e menu hamburguer à direita -->
+  <header class="container py-4 d-flex justify-content-between align-items-center">
+    <div class="logo d-flex flex-column align-items-start">
+      <img src="../imagens/icons/yume-logo.png" alt="Logo Yume">
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark p-0">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav text-end">
+          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Reserva</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
     <main class ="menu">
+        <div class="cabecalho">
+            <img src="../imagens/menu/header-menu.jpg" alt="header-menu">
+            <div class="cabecalho-titulo">
+                <h1>A nossa ementa</h1>
+                <h2>Descubra os nossos pratos e embarque numa experiência gastronómica que honra a essência da culinária japonesa.</h2>
+            </div>            
+        </div>
         <div class="container text-center">
             <h3>Entradas</h3>
             <div class="row row-cols-3">
                 <div class="col">
                     <div class ="container-menu">
                         <h4>Edamame</h4>
-                        <img src="../assets/imagens/menu/edamame.jpg" alt="edamame">
+                        <img src="../imagens/menu/edamame.jpg" alt="edamame">
                         <p>4.90€</p>
                         <a href="#menu" class="botao-ver-mais">Ver mais</a>
                     </div>
@@ -51,7 +69,7 @@
                 <div class="col">
                     <div class ="container-menu">
                         <h4>Gyoza</h4>
-                        <img src="../assets/imagens/menu/gyoza.jpg" alt="Gyoza">
+                        <img src="../imagens/menu/gyoza.jpg" alt="Gyoza">
                         <p>5.90€</p>
                         <a href="#menu" class="botao-ver-mais">Ver mais</a>
                     </div>
@@ -59,20 +77,20 @@
               <div class="col">
                 <div class ="container-menu">
                     <h4>Agedashi Tofu</h4>
-                    <img src="../assets/imagens/menu/agedashi-tofu.png" alt="agedashi-tofu">
+                    <img src="../imagens/menu/agedashi-tofu.png" alt="agedashi-tofu">
                     <p>4.30€</p>
                     <a href="#menu" class="botao-ver-mais">Ver mais</a>
                 </div>
               </div>
             </div>
         </div>
-        <main class="container text-center">
+        <div class="container text-center">
             <h3>Sushi & Sashimi</h3>
             <div class="row row-cols-3">
                 <div class="col">
                     <div class ="container-menu">
                         <h4>Nigiri</h4>
-                        <img src="../assets/imagens/menu/nigiri.jpg" alt="nigiri">
+                        <img src="../imagens/menu/nigiri.jpg" alt="nigiri">
                         <p>5.50€</p>
                         <a href="#menu" class="botao-ver-mais">Ver mais</a>
                     </div>
@@ -80,7 +98,7 @@
                 <div class="col">
                     <div class ="container-menu">
                         <h4>Sashimi</h4>
-                        <img src="../assets/imagens/menu/sashimi.jpg" alt="sashimi">
+                        <img src="../imagens/menu/sashimi.jpg" alt="sashimi">
                         <p>8.80€</p>
                         <a href="#menu" class="botao-ver-mais">Ver mais</a>
                     </div>
@@ -88,7 +106,7 @@
               <div class="col">
                 <div class ="container-menu">
                     <h4>Uramaki</h4>
-                    <img src="../assets/imagens/menu/uramaki.jpg" alt="uramaki">
+                    <img src="../imagens/menu/uramaki.jpg" alt="uramaki">
                     <p>12.50€</p>
                     <a href="#menu" class="botao-ver-mais">Ver mais</a>
                 </div>
@@ -100,7 +118,7 @@
                 <div class="col">
                     <div class ="container-menu">
                         <h4>Ramen</h4>
-                        <img src="../assets/imagens/menu/ramen.jpg" alt="ramen">
+                        <img src="../imagens/menu/ramen.jpg" alt="ramen">
                         <p>14.90€</p>
                         <a href="#menu" class="botao-ver-mais">Ver mais</a>
                     </div>
@@ -108,7 +126,7 @@
                 <div class="col">
                     <div class ="container-menu">
                         <h4>Chicken Teriyaki</h4>
-                        <img src="../assets/imagens/menu/chicken-teriyaki.jpg" alt="chicken-teriyaki">
+                        <img src="../imagens/menu/chicken-teriyaki.jpg" alt="chicken-teriyaki">
                         <p>10.70€</p>
                         <a href="#menu" class="botao-ver-mais">Ver mais</a>
                     </div>
@@ -116,7 +134,7 @@
                 <div class="col">
                     <div class ="container-menu">
                         <h4>Yakisoba</h4>
-                        <img src="../assets/imagens/menu/yakisoba.jpg" alt="yakisoba">
+                        <img src="../imagens/menu/yakisoba.jpg" alt="yakisoba">
                         <p>11.80€</p>
                         <a href="#menu" class="botao-ver-mais">Ver mais</a>
                     </div>
@@ -129,7 +147,7 @@
                 <div class="col">
                     <div class ="container-menu">
                         <h4>Chá Matcha</h4>
-                        <img src="../assets/imagens/menu/cha-matcha.jpg" alt="cha-matcha">
+                        <img src="../imagens/menu/cha-matcha.jpg" alt="cha-matcha">
                         <p>3.30€</p>
                         <a href="#menu" class="botao-ver-mais">Ver mais</a>
                     </div>
@@ -137,7 +155,7 @@
                 <div class="col">
                     <div class ="container-menu">
                         <h4>Ramune</h4>
-                        <img src="../assets/imagens/menu/ramune.jpg" alt="ramune">
+                        <img src="../imagens/menu/ramune.jpg" alt="ramune">
                         <p>4.50€</p>
                         <a href="#menu" class="botao-ver-mais">Ver mais</a>
                     </div>
@@ -145,7 +163,7 @@
                 <div class="col">
                     <div class ="container-menu">
                         <h4>Sake</h4>
-                        <img src="../assets/imagens/menu/Sake.jpg" alt="Sake">
+                        <img src="../imagens/menu/Sake.jpg" alt="Sake">
                         <p>7.40€</p>
                         <a href="#menu" class="botao-ver-mais">Ver mais</a>
                     </div>
@@ -158,7 +176,7 @@
                 <div class="col">
                     <div class ="container-menu">
                         <h4>Mochi</h4>
-                        <img src="../assets/imagens/menu/mochi.jpg" alt="mochi">
+                        <img src="../imagens/menu/mochi.jpg" alt="mochi">
                         <p>3.30€</p>
                         <a href="#menu" class="botao-ver-mais">Ver mais</a>
                     </div>
@@ -166,7 +184,7 @@
                 <div class="col">
                     <div class ="container-menu">
                         <h4>Dorayaki</h4>
-                        <img src="../assets/imagens/menu/dorayaki.jpg" alt="dorayaki">
+                        <img src="../imagens/menu/dorayaki.jpg" alt="dorayaki">
                         <p>5.90€</p>
                         <a href="#menu" class="botao-ver-mais">Ver mais</a>
                     </div>
@@ -174,19 +192,26 @@
                 <div class="col">
                     <div class ="container-menu">
                         <h4>Dango</h4>
-                        <img src="../assets/imagens/menu/dango.jpg" alt="dango">
+                        <img src="../imagens/menu/dango.jpg" alt="dango">
                         <p>4.50€</p>
                         <a href="#menu" class="botao-ver-mais">Ver mais</a>
                     </div>
                 </div>
             </div>
         </div>        
-    </main>
-    <footer>
-        <p>
-            2025 Yume® – Todos os direitos reservados
-        </p>
-    </footer>
+    </div>
+
+    <footer class="text-center text-white py-4">
+        <div class="social-icons mb-2">
+          <a href="#"><img src="../imagens/index/facebook-icon.png" alt="Facebook" class="me-2 social-icon"></a>
+          <a href="#"><img src="../imagens/index/instagram-icon.png" alt="Instagram" class="me-2 social-icon"></a>
+          <a href="#"><img src="../imagens/index/x-icon.png" alt="X" class="social-icon"></a>
+        </div>
+        <small>2025 Yume® – Todos os direitos reservados</small>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
     
 </body>
 </html>
