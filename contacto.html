@@ -4,35 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contacto - Yume</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container py-5">
-    <div class="row mb-4">
-      <div class="col-md-6 d-flex align-items-center">
-        <img src="https://i.imgur.com/h3nJGpE.png" alt="Yume Logo" class="logo me-3"> <!-- Exemplo de logo -->
-        <div>
-          <h5 class="mb-1">Tem alguma dúvida?</h5>
-          <p>- Deixe aqui a sua mensagem.</p>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-black bg-black py-3">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="yume-logo.png" alt="Yume Logo" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Reserva</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Contacto</a>
+          </li>
+        </ul>
       </div>
-      <div class="col-md-6 text-end d-none d-md-block">
-        <nav>
-          <a href="#" class="text-light me-3">Menu</a>
-          <a href="#" class="text-light me-3">Reserva</a>
-          <a href="#" class="text-light me-3">Galeria</a>
-          <a href="#" class="text-light">Contacto</a>
-        </nav>
+    </div>
+  </nav>
+
+  <!-- Mensagem -->
+  <div class="container py-5">
+    <div class="row mb-4 text-center">
+      <div class="col-12">
+        <h5 class="mb-1">Tem alguma dúvida?</h5>
+        <p>- Deixe aqui a sua mensagem.</p>
       </div>
     </div>
 
-    <div class="row">
+    <!-- Formulário e Informações -->
+    <div class="row align-items-center justify-content-center">
       <!-- Formulário -->
-      <div class="col-md-6">
+      <div class="col-12 col-md-5">
         <div class="form-container">
-          <h5 class="mb-3">Formulário de Contacto</h5>
+          <h5 class="mb-3 text-center">Formulário de Contacto</h5>
           <form id="contactForm">
             <div class="mb-3">
               <label for="nome" class="form-label">Nome:</label>
@@ -56,7 +75,7 @@
       </div>
 
       <!-- Informações de Contacto -->
-      <div class="col-md-6 info">
+      <div class="col-12 col-md-5 info mt-4 mt-md-0">
         <h5>Morada:</h5>
         <p>
           Rua da Alegria, nº543<br>
@@ -65,7 +84,7 @@
 
         <h5>Contactos:</h5>
         <p>
-          911111111<br>
+          912912912<br>
           yume@gmail.com
         </p>
 
@@ -79,7 +98,9 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
+  <!-- para add o SweetAlert2 no formulário de contacto -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
