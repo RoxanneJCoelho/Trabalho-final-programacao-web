@@ -11,10 +11,6 @@ h1, h2, h3, h4 {
   font-family: 'Cormorant Garamond', serif;
 }
 
-p, a, small, li, button, nav, span {
-  font-family: 'Noto Sans JP', sans-serif;
-}
-
 /* HEADER */
 header {
   display: flex;
@@ -24,14 +20,15 @@ header {
 }
 
 header .logo img {
-  width: 200px;
+  width: 220px;
   height: auto;
   transition: 0.3s ease;
   cursor: pointer;
 }
 
-header .logo a {
-  display: inline-block;
+header .logo img:hover {
+  transform: scale(1.05);
+  filter: brightness(120%);
 }
 
 .navbar-nav .nav-link {
@@ -40,6 +37,10 @@ header .logo a {
   font-size: 1.2rem;
   margin-right: 1rem;
   text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(132, 151, 97) !important;
 }
 
 .navbar-toggler {
@@ -113,18 +114,30 @@ footer {
   font-size: 0.9rem;
   color: #aaa;
   text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer .footer-title {
+  color: rgb(132, 151, 97);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+footer .social-icons a {
+  text-decoration: none;
+  display: inline-block;
 }
 
 footer .social-icons img.social-icon {
-  width: 24px;
-  height: 24px;
-  margin: 0 6px;
+  width: 48px;
+  height: 48px;
+  margin: 0 8px;
   filter: brightness(200%);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, filter 0.2s ease;
   cursor: pointer;
 }
 
-footer .social-icons img.social-icon:hover {
+footer .social-icons a:hover img {
   transform: scale(1.2);
   filter: brightness(250%);
 }
@@ -140,7 +153,7 @@ footer .social-icons img.social-icon:hover {
   }
 
   header .logo img {
-    width: 160px;
+    width: 200px;
   }
 
   .navbar-nav {
@@ -158,11 +171,16 @@ footer .social-icons img.social-icon:hover {
   .galeria-label {
     font-size: 1.2rem;
   }
+
+  footer .social-icons img.social-icon {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 @media (max-width: 480px) {
   header .logo img {
-    width: 140px;
+    width: 180px;
   }
 
   .modal-body .img-container {
@@ -171,5 +189,10 @@ footer .social-icons img.social-icon:hover {
 
   .navbar-nav .nav-link {
     font-size: 1rem;
+  }
+
+  footer .social-icons img.social-icon {
+    width: 40px;
+    height: 40px;
   }
 }
