@@ -95,17 +95,27 @@ header .logo img {
     background-color: #000;
     padding: 1rem;
   }
+
 .container{
     max-width: 90%;
 }
 
+
 .container-menu{
     background-color: rgb(132, 151, 97);
     padding: 2vw;
-    margin-bottom: 2rem;
+    margin: 2vw;
     border-radius: 12px;
-
 }
+
+.entradas{
+    margin-top: 2vw;
+}
+
+h4{
+    margin-bottom: 1vw;
+}
+
 /* Tamanhos consistentes para imagens */
 .container-menu img {
     width: 100%;
