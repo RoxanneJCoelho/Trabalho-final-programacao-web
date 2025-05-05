@@ -118,8 +118,9 @@ footer {
 }
 
 footer .footer-title {
+  font-family: 'Cormorant Garamond', serif;
   color: rgb(132, 151, 97);
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
