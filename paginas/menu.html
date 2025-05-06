@@ -26,22 +26,25 @@
     
 </head>
 <body>
+    
     <!-- Header com logo à esquerda e menu hamburguer à direita -->
   <header class="container py-4 d-flex justify-content-between align-items-center">
     <div class="logo d-flex flex-column align-items-start">
-      <img src="../imagens/icons/yume-logo.png" alt="Logo Yume">
+      <a href="../index.html">
+        <img src="../imagens/icons/yume-logo.png" alt="Logo Yume">
+      </a>
     </div>
-
+  
     <nav class="navbar navbar-expand-lg navbar-dark p-0">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
         <ul class="navbar-nav text-end">
-          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Reserva</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="reserva.html">Reserva</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
         </ul>
       </div>
     </nav>
