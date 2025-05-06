@@ -28,7 +28,7 @@ h3{
   .cabecalho-titulo{
     position: absolute;
     width: 30%;
-    top: 20%;
+    top: 10%;
     left: 5%;
   }
 
@@ -106,8 +106,14 @@ header .logo img {
     padding: 2vw;
     margin: 2vw;
     border-radius: 12px;
+    transition: transform 0.6s ease, background-color 0.6s ease, color 0.6s ease;
 }
-
+.container-menu:hover {
+  transform: scale(1.05);
+  
+  background-color: #49925f;      /* Nova cor de fundo */
+  color: white;
+}
 .entradas{
     margin-top: 2vw;
 }
@@ -141,57 +147,21 @@ h4{
 }
 
 
-/* Responsividade */
-@media (max-width: 768px) {
-    header {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center !important;
-      text-align: left;
-    }
-  
-    .navbar-nav {
-      align-items: flex-start;
-    }
-  
-    .navbar-collapse {
-      padding: 1rem;
-      text-align: right;
-    }
-  
-    .navbar-toggler {
-      margin-left: auto;
-    }
-  
-    .carousel-container img {
-      max-height: 220px;
-    }
-  
-    section.container {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-  
-    footer {
-      font-size: 0.85rem;
-    }
+@media (max-width: 600px) {
+  .container {
+
+    display:flex;
+    flex-direction: column;
   }
-  
-  @media (max-width: 480px) {
-    .carousel-container img {
-      max-height: 200px;
-    }
-  
-    .navbar-nav .nav-link {
-      font-size: 1rem;
-    }
-  
-    section.container {
-      font-size: 0.95rem;
-    }
-  
-    footer .social-icons img.social-icon {
-      width: 22px;
-      height: 22px;
-    }
+}
+
+/* Em ecrãs pequenos (como telemóveis), reduz o tamanho das fontes */
+@media (max-width: 600px) {
+  .cabecalho-titulo h1 {
+    font-size: 24px;
   }
+
+  .cabecalho-titulo h2 {
+    font-size: 14px;
+  }
+}
