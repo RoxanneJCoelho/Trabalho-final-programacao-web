@@ -79,15 +79,61 @@ header .logo img:hover {
   width: 8%;
 }
 
+/* Evita achatar em ecrãs pequenos */
+@media (max-width: 576px) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 36px;
+    height: 36px;
+    background-size: 60% 60%;
+  }
+}
+
 /* SOBRE NÓS */
 .sobre-nos h2 {
   font-family: 'Cormorant Garamond', serif;
+  color: #AAC74F;
   font-size: 2.2rem;
 }
 
 .sobre-nos p {
   font-size: 1rem;
   line-height: 1.7;
+}
+
+.igual-altura {
+  background-color: rgba(170, 199, 79, 0.2);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 3px solid #AAC74F;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 2.2;
+  color: white;
+}
+
+.img-container {
+  border: 3px solid #AAC74F;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Match altura em desktop */
+@media (min-width: 768px) {
+  .sobre-nos .row.g-4 {
+    align-items: stretch;
+  }
 }
 
 /* SECÇÃO INFORMAÇÕES */
@@ -106,13 +152,15 @@ header .logo img:hover {
   margin: 0 auto;
   width: 40px;
   height: auto;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .seta-topo:hover {
   transform: translateY(-5px);
+  filter: drop-shadow(0 0 10px #AAC74F);
 }
 
+/* FOOTER */
 /* FOOTER */
 footer {
   border-top: 1px solid #444;
@@ -120,7 +168,18 @@ footer {
   color: #aaa;
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #000;
+}
+
+footer .footer-title {
+  font-family: 'Cormorant Garamond', serif;
+  color: rgb(132, 151, 97);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+footer .social-icons a {
+  text-decoration: none;
+  display: inline-block;
 }
 
 footer .social-icons img.social-icon {
@@ -132,10 +191,11 @@ footer .social-icons img.social-icon {
   cursor: pointer;
 }
 
-footer .social-icons img.social-icon:hover {
+footer .social-icons a:hover img {
   transform: scale(1.2);
   filter: brightness(250%);
 }
+
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
