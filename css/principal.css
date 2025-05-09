@@ -79,7 +79,6 @@ header .logo img:hover {
   width: 8%;
 }
 
-/* Evita achatar em ecrãs pequenos */
 @media (max-width: 576px) {
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
@@ -101,7 +100,8 @@ header .logo img:hover {
   line-height: 1.7;
 }
 
-.igual-altura {
+.igual-altura,
+.img-container {
   background-color: rgba(170, 199, 79, 0.2);
   padding: 2rem;
   border-radius: 10px;
@@ -110,16 +110,11 @@ header .logo img:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 2rem;
-  line-height: 2.2;
-  color: white;
 }
 
 .img-container {
-  border: 3px solid #AAC74F;
-  border-radius: 10px;
+  padding: 0;
   overflow: hidden;
-  height: 100%;
 }
 
 .img-container img {
@@ -129,21 +124,56 @@ header .logo img:hover {
   border-radius: 8px;
 }
 
-/* Match altura em desktop */
-@media (min-width: 768px) {
-  .sobre-nos .row.g-4 {
-    align-items: stretch;
+.sobre-nos .row.g-4 > div {
+  display: flex;
+}
+
+.sobre-nos .igual-altura,
+.sobre-nos .img-container {
+  width: 100%;
+}
+
+.yume-highlight {
+  color: #AAC74F;
+  font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+  .igual-altura,
+  .img-container {
+    min-height: 300px;
   }
 }
 
 /* SECÇÃO INFORMAÇÕES */
-.info-section h5 {
-  font-size: 1.1rem;
-  color: rgb(132, 151, 97);
+.info-section {
+  padding: 4rem 1rem;
+  background-color: #000;
+  color: white;
 }
 
+.info-section .row {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.info-section .col-md-3 {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.info-section h5 {
+  font-size: 1.6rem;
+  color: #849761;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+
+
 .info-section p {
-  margin: 0;
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* SETA PARA O TOPO */
@@ -161,13 +191,13 @@ header .logo img:hover {
 }
 
 /* FOOTER */
-/* FOOTER */
 footer {
   border-top: 1px solid #444;
   font-size: 0.9rem;
   color: #aaa;
   text-align: center;
   padding: 2rem 1rem;
+  background-color: #000;
 }
 
 footer .footer-title {
@@ -195,7 +225,6 @@ footer .social-icons a:hover img {
   transform: scale(1.2);
   filter: brightness(250%);
 }
-
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
