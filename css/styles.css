@@ -1,236 +1,193 @@
+/* Ficheiro css do menu do website YUME - Restaurante Japonês */
+
+/* BASE */
+
+/* estilos do body */
 body {
-  background-color: black;
-  color: white;
-  margin: 0;
-  padding: 0;
+  background-color: rgb(0,0,0); /* cor de fundo */
+  color: rgb(255,255,255); /* cor das letras */
+  margin: 0; /* remove as margens padrão do browser */
+  padding: 0; /* remove o preenchimento interno padrão */
 }
 
+/* estilos dos títulos */
 h1, h2, h3, h4 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', serif; /* tipo de letra - para título e navbar vai ser a Cormorant Garamond */
 }
 
-h3{
-  padding:2vw;
+/* estilos dos parágrafos */
+p, a {
+  font-family: 'Noto Sans JP', sans-serif; /* tipo de letra - para parágrafos e link vai ser a Noto Sans JP */
 }
-
-p, a, li, button{
-  font-family: 'Noto Sans JP', sans-serif;
-}
-
-.cabecalho {
-  position: relative;
-}
-
-.cabecalho img {
-  width: 100%; 
-}
-
-.cabecalho-titulo{
-  position: absolute;
-  width: 30%;
-  top: 10%;
-  left: 5%;
-}
-
-.cabecalho h1{
-  font-weight: 900;
-  margin-bottom: 4vw;
-  text-transform: uppercase;
-}
-
-
 
 /* HEADER */
-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 1rem 0;
-}
 
+/* estilos para o logo Yume - japonês */
 header .logo img {
-width: 220px;
-height: auto;
-transition: 0.3s ease;
-cursor: pointer;
+  width: 220px; /* largura do logo */
+  transition: 0.3s ease; /* transição para o hover */
+  cursor: pointer; /* elemento clicável */
 }
 
+/* estilos para o logo Yume - japonês ao passar o rato por cima*/
 header .logo img:hover {
-transform: scale(1.05);
-filter: brightness(120%);
+  transform: scale(1.05); /* fica ligeiramente maior */
+  filter: brightness(120%); /* aumenta o brilho */
 }
 
-.navbar-nav .nav-link {
-font-family: 'Cormorant Garamond', serif;
-color: white !important;
-font-size: 1.2rem;
-margin-right: 1rem;
-text-transform: uppercase;
+/* estilos dos links da navbar */
+.nav-link {
+  font-family: 'Cormorant Garamond', serif; /* tipo de letra */
+  color: rgb(255,255,255); /* cor da letra */
+  font-size: 1.2rem; /* tamanho da letra */
+  margin-right: 1rem; /* margem á direita */
+  text-transform: uppercase; /* coloca o texto em maiúscula */
 }
 
-.navbar-nav .nav-link:hover {
-color: rgb(132, 151, 97) !important;
-}
-
-.navbar-toggler {
-border: none;
-padding: 0.25rem;
-}
-
-.navbar-collapse {
-background-color: #000;
-padding: 1rem;
-text-align: right;
-}
-
-.container{
-  max-width: 90%;
+/* estilos dos links da navbar ao passar o rato por cima */
+.nav-link:hover {
+  color: rgb(132, 151, 97);
 }
 
 
-.container-menu{
-  background-color: rgb(132, 151, 97);
-  padding: 2vw;
-  margin: 2vw;
-  border-radius: 12px;
-  transition: transform 0.6s ease, background-color 0.6s ease, color 0.6s ease;
+/* CABEÇALHO */
+.cabecalho {
+  position: relative; /* permite colocar elementos filhos de uma forma mais simples */
 }
+
+/* estilos da posição dos títulos do cabeçalho */
+.cabecalho-titulo {
+  position: absolute; /* posição absoluta em relação ao elemento-pai (cabecalho) */
+  width: 30%; /* ocupa 30% da largura do container */
+  top: 20%; /* 20% a partir do topo do container */
+  left: 10%; /* 10% a partir da margem esquerda do container */
+}
+
+/* estilos da imagem do cabeçalho */
+.cabecalho img {
+  width: 100%; /* ocupa toda a largura do container */
+}
+
+/* estilos do título h1 */
+h1 {
+  font-size: 4vw; /* tamanho de letra responsivo */
+  margin-bottom: 4vw; /* margem a baixo responsiva para dar um certo espaçamento entre títulos */
+  text-transform: uppercase; /* coloca o texto em maiúscula */
+}
+
+/* estilos do título h2 */
+h2 { 
+  font-size: 3vw; /* tamanho de letra responsivo */
+}
+
+/* GRID */
+/* containers com o nome, imagem, preço e botao ver mais do prato */
+.container-menu {
+  background-color: rgb(132, 151, 97); /* cor de fundo */
+  padding: 2vw; /* espaçamento interno responsivo */
+  margin: 2vw; /* margem responsiva */
+  border-radius: 12px; /* bordas arredondadas */
+  transition: transform 0.4s ease, background-color 0.4s ease; /* transição para o hover */
+}
+
+/* container-menu ao passar com o rato em cima */
 .container-menu:hover {
-transform: scale(1.05);
-
-background-color: #49925f;      /* Nova cor de fundo */
-color: white;
-}
-.entradas{
-  margin-top: 2vw;
+transform: scale(1.05); /* aumenta ligeiramente */
+background-color: rgb(164, 199, 98); /* nova cor de fundo */
 }
 
-h4{
-  margin-bottom: 1vw;
+/* estilos para o título entradas */
+.entradas {
+  margin-top: 3vw; /* margem superior responsiva para não ficar colado ao cabeçalho */
 }
 
-/* Tamanhos consistentes para imagens */
+/* estilos para os títulos dos pratos */
+h4 {
+  margin-bottom: 1vw; /* margem inferior responsiva para não ficar colado á imagem */
+}
+
+/* estilos das imagens dos pratos */
 .container-menu img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem;
+  width: 100%; /* ocupa 100% da largura do container */
+  height: 200px; /* altura de 200px */
+  object-fit: cover; /* a imagem cobre todo o espaço e corta o excedente, sem distorção */
+  border-radius: 8px; /* bordas arredondadas */
+  margin-bottom: 1vw; /* margem inferior responsiva que é para o preço não ficar colado á imagem */
 }
 
+/* estilos do botao ver mais */
 .botao-ver-mais {
-  display: inline-block;
-  padding: 0.5rem 1.2rem;
-  color: white;
-  background-color:  rgb(107, 122, 79);
-  border-radius: 30px;
-  font-size: 0.9rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  display: inline-block; /* alinhar os botões lado a lado */
+  padding: 0.5rem 1.2rem; /* botão alongado */
+  background-color:  rgb(107, 122, 79); /* cor de fundo */
+  color: rgb(255,255,255); /* cor das letras */
+  border-radius: 30px; /* bordas arredondadas */
+  font-size: 0.8rem; /* redução de tamanho da letra */
+  text-decoration: none; /* retira o sublinhado */
+  transition: all 0.3s ease; /* transição para o hover */
 }
+
+/* estilos do botao ver mais ao passar o rato em cima */
 .botao-ver-mais:hover {
   background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
 }
 
-
-
-/* Em ecrãs pequenos (como telemóveis), reduz o tamanho das fontes */
-@media (max-width: 600px) {
-.cabecalho-titulo h1 {
-  font-size: 24px;
-}
-
-.cabecalho-titulo h2 {
-  font-size: 14px;
-}
-}
 /* FOOTER */
+
 footer {
-border-top: 1px solid #444;
-font-size: 0.9rem;
-color: #aaa;
-text-align: center;
-padding: 2rem 1rem;
+  border-top: 1px solid rgb(94, 99, 84); /* coloca uma linha fina acinzentada no topo do footer */
 }
 
-footer .footer-title {
-font-family: 'Cormorant Garamond', serif;
-color: rgb(132, 151, 97);
-font-size: 1.6rem;
-margin-bottom: 1rem;
+/* estilos para o título do footer */
+footer h3 {
+  margin-bottom: 1rem; /* margem em baixo, para dar um espaçamento entre o título e os icons */
+  color: rgb(132, 151, 97); /* cor das letras */
 }
 
-footer .social-icons a {
-text-decoration: none;
-display: inline-block;
+/* estilos para os links do footer */
+.social-icons a {
+  text-decoration: none; /* retira o padrão azul do link */
 }
 
-footer .social-icons img.social-icon {
-width: 48px;
-height: 48px;
-margin: 0 8px;
-filter: brightness(200%);
-transition: transform 0.2s ease, filter 0.2s ease;
-cursor: pointer;
+/* estilos para os icons das redes sociais */
+.social-icons img {
+  width: 48px; /* largura dos icons */
+  margin: 0 10px; /* margem vertical entre os icons para dar espaçamento entre eles */
+  filter: brightness(200%); /* aumenta o brilho dos icons, para não ficarem muito escuros */
+  transition: all 0.2s ease; /* transição para o hover */
+  cursor: pointer; /* elemento clicável */
 }
 
-footer .social-icons a:hover img {
-transform: scale(1.2);
-filter: brightness(250%);
+/* estilos para cada icon de rede social ao passar o rato por cima */
+.social-icons a:hover img {
+  transform: scale(1.2); /* aumenta ligeiramente */
+  filter: brightness(300%); /* aumenta o brilho */
 }
 
-/* RESPONSIVO */
+/* estilos para o parágrafo do footer */
+footer p {
+  font-size: 0.8rem; /* tamanho da letra mais pequeno */
+}
+
+/* RESPONSIVO  - para telas até 768px de largura */
+
 @media (max-width: 768px) {
-header {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center !important;
-  text-align: left;
-  padding: 1rem;
-}
+  header .logo img {
+    width: 170px; /* a largura do logo passa para 170px */
+  }
+  .navbar-nav {
+    align-items: flex-start; /* alinha a navbar no topo */
+  }
 
-header .logo img {
-  width: 200px;
-}
+  .navbar-nav .nav-link {
+    font-size: 1rem; /* o tamanho das letras do navbar passa a 1rem */
+  }
 
-.navbar-nav {
-  align-items: flex-start;
-}
+  .navbar-toggler {
+    margin-left: auto; /* coloca o botão hamburger do lado direito */
+  }
 
-.navbar-toggler {
-  margin-left: auto;
-}
-
-.modal-body .img-container {
-  height: 180px;
-}
-
-.galeria-label {
-  font-size: 1.2rem;
-}
-
-footer .social-icons img.social-icon {
-  width: 32px;
-  height: 32px;
-}
-}
-
-@media (max-width: 480px) {
-header .logo img {
-  width: 180px;
-}
-
-.modal-body .img-container {
-  height: 160px;
-}
-
-.navbar-nav .nav-link {
-  font-size: 1rem;
-}
-
-footer .social-icons img.social-icon {
-  width: 40px;
-  height: 40px;
-}
+  .social-icons img {
+    width: 36px; /* a largura dos icons passa a 36px*/
+  }
 }

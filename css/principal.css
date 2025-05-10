@@ -27,7 +27,7 @@ p {
 /* estilos para o logo Yume - japonês */
 header .logo img {
   width: 220px; /* largura do logo */
-  transition: 0.3s ease; /* transição para o hover */
+  transition: all 0.3s ease; /* transição para o hover */
   cursor: pointer; /* elemento clicável */
 }
 
@@ -54,7 +54,7 @@ header .logo img:hover {
 /* CARROSSEL */
 .carousel-item img {
   max-height: 650px; /* altura máxima da imagem a 650px */
-  object-fit: cover; /* a imagem cobre todo o espaço e corta o excedente, sem distorção*/
+  object-fit: cover; /* a imagem cobre todo o espaço e corta o excedente, sem distorção */
 }
 
 /* SETAS DO CARROSSEL */
@@ -114,7 +114,7 @@ header .logo img:hover {
   display: block; /* elemento de bloco - começa uma nova linha e este elemento ocupa toda a largura da mesma */
   width: 40px; /* a largura da seta é de 40px */
   margin: 0 auto; /* centraliza a seta horizontalmente */
-  transition: transform 0.3s ease, filter 0.3s ease; /* transição para o hover */
+  transition: all 0.3s ease; /* transição para o hover */
 }
 
 /* estilos da seta-topo ao passar o rato por cima */
@@ -144,7 +144,7 @@ h3 {
   width: 48px; /* largura dos icons */
   margin: 0 10px; /* margem vertical entre os icons para dar espaçamento entre eles */
   filter: brightness(200%); /* aumenta o brilho dos icons, para não ficarem muito escuros */
-  transition: transform 0.2s ease, filter 0.2s ease; /* transição para o hover */
+  transition: all 0.2s ease; /* transição para o hover */
   cursor: pointer; /* elemento clicável */
 }
 
@@ -155,7 +155,7 @@ h3 {
 }
 
 /* estilos para o parágrafo do footer */
-footer p{
+footer p {
   font-size: 0.8rem; /* tamanho da letra mais pequeno */
 }
 
