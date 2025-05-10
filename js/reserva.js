@@ -52,7 +52,7 @@ const renderCalendar = (month, year) => {
         if (cellTimestamp < todayTimestamp) {
           // Adiciona a classe "disabled" para dias passados
           cell.classList.add("disabled");
-        } else {
+        } else { 
           // Adiciona um evento de clique para selecionar dias futuros
           cell.addEventListener("click", () => {
             if (selectedCell) selectedCell.classList.remove("selected-day"); // Remove a seleção anterior
