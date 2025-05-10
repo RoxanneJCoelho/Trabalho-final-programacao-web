@@ -109,38 +109,39 @@ header .logo img:hover {
 }
 
 /* FOOTER */
+
 footer {
-  border-top: 1px solid #444;
-  font-size: 0.9rem;
-  color: #aaa;
-  text-align: center;
-  padding: 2rem 1rem;
+  border-top: 1px solid rgb(94, 99, 84); /* coloca uma linha fina acinzentada no topo do footer */
 }
 
-footer .footer-title {
-  font-family: 'Cormorant Garamond', serif;
-  color: rgb(132, 151, 97);
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+/* estilos para o título do footer */
+footer h3 {
+  margin-bottom: 1rem; /* margem em baixo, para dar um espaçamento entre o título e os icons */
+  color: rgb(132, 151, 97); /* cor das letras */
 }
 
-footer .social-icons a {
-  text-decoration: none;
-  display: inline-block;
+/* estilos para os links do footer */
+.social-icons a {
+  text-decoration: none; /* retira o padrão azul do link */
 }
 
-footer .social-icons img.social-icon {
-  width: 48px;
-  height: 48px;
-  margin: 0 8px;
-  filter: brightness(200%);
-  transition: transform 0.2s ease, filter 0.2s ease;
-  cursor: pointer;
+/* estilos para os icons das redes sociais */
+.social-icons img {
+  width: 48px; /* largura dos icons */
+  filter: brightness(200%); /* aumenta o brilho dos icons, para não ficarem muito escuros */
+  transition: all 0.2s ease; /* transição para o hover */
+  cursor: pointer; /* elemento clicável */
 }
 
-footer .social-icons a:hover img {
-  transform: scale(1.2);
-  filter: brightness(250%);
+/* estilos para cada icon de rede social ao passar o rato por cima */
+.social-icons a:hover img {
+  transform: scale(1.2); /* aumenta ligeiramente */
+  filter: brightness(300%); /* aumenta o brilho */
+}
+
+/* estilos para o parágrafo do footer */
+footer p {
+  font-size: 0.8rem; /* tamanho da letra mais pequeno */
 }
 
 /* RESPONSIVO */
