@@ -2,6 +2,8 @@ body {
   background-color: #000;
   color: white;
   font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* HEADER */
@@ -14,7 +16,6 @@ header {
 
 header .logo img {
   width: 220px;
-  height: auto;
   transition: 0.3s ease;
   cursor: pointer;
 }
@@ -47,23 +48,62 @@ header .logo img:hover {
   text-align: right;
 }
 
+/* Título */
+.titulo-pagina {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.titulo-contacto {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  color: white;
+  font-weight: 600;
+}
 
 
+/* INTRODUÇÃO */
+.intro-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+/* FORMULÁRIOS */
 .form-container {
-  background-color: #111;
-  border: 2px solid #444;
+  background-color: #000;
+  border: 2px solid rgb(132, 151, 97);
   padding: 20px;
   border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.form-control, textarea {
+.form-container h5 {
+  color: rgb(132, 151, 97);
+  text-align: center;
+}
+
+.form-control,
+textarea {
   background-color: #ddd;
+  border-radius: 6px;
 }
 
+/* BOTÃO */
 .btn-enviar {
   background-color: #eee;
-  color: red;
+  color: rgb(255, 57, 57);
   font-weight: bold;
+  border-radius: 6px;
+  padding: 0.6rem 1.5rem;
+  width: fit-content;         /* ou define um valor fixo como 150px */
+  margin: 0 auto;             /* centraliza horizontalmente */
+  display: block;             /* necessário para que margin funcione como esperado */
+  transition: 0.3s ease;
 }
 
 .btn-enviar:hover {
@@ -71,25 +111,35 @@ header .logo img:hover {
   color: #000;
 }
 
+/* INFO */
 .info {
-  margin-top: 20px;
+  background-color: #000;
+  border: 2px solid rgb(132, 151, 97);
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.row.align-items-center {
-  gap: 20px; /* Ajusta espaçamento para telas menores */
+.info-content {
+  width: 100%;
 }
 
-.row.mb-4.text-center {
-  margin-bottom: 20px; /* Reduz espaçamento em telas menores */
-  text-align: center; /* Centraliza o texto */
+.info h5 {
+  color: rgb(132, 151, 97);
+  font-weight: bold;
+  margin-top: 1rem;
 }
 
-@media (max-width: 768px) {
-  .row.align-items-center {
-    flex-direction: column;
-    gap: 20px;
-  }
+.info p {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #fff;
+  margin-bottom: 0.5rem;
 }
+
 /* FOOTER */
 footer {
   border-top: 1px solid #444;
@@ -104,6 +154,7 @@ footer .footer-title {
   color: rgb(132, 151, 97);
   font-size: 1.6rem;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 footer .social-icons a {
@@ -125,34 +176,27 @@ footer .social-icons a:hover img {
   filter: brightness(250%);
 }
 
+footer p {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
 /* RESPONSIVO */
 @media (max-width: 768px) {
   header {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center !important;
-    text-align: left;
     padding: 1rem;
   }
 
-  header .logo img {
-    width: 200px;
+  .form-container,
+  .info {
+    margin-bottom: 20px;
   }
 
-  .navbar-nav {
-    align-items: flex-start;
-  }
-
-  .navbar-toggler {
-    margin-left: auto;
-  }
-
-  .modal-body .img-container {
-    height: 180px;
-  }
-
-  .galeria-label {
-    font-size: 1.2rem;
+  .intro-text {
+    text-align: center;
   }
 
   footer .social-icons img.social-icon {
@@ -166,16 +210,18 @@ footer .social-icons a:hover img {
     width: 180px;
   }
 
-  .modal-body .img-container {
-    height: 160px;
-  }
-
-  .navbar-nav .nav-link {
+  .btn-enviar {
     font-size: 1rem;
   }
 
   footer .social-icons img.social-icon {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    margin-left: auto;
   }
 }

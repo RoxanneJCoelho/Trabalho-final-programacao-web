@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contacto - Yume</title>
 
-<!-- link para o favicon -->
-<link rel="icon" href="../imagens/icons/yume-logo.png" type="image/png">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/contacto.css">
+  <link rel="icon" href="../imagens/icons/yume-logo.png" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/contacto.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Sans+JP&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-  <!-- Header com logo à esquerda e menu hamburguer à direita -->
+  <!-- Header -->
   <header class="container py-4 d-flex justify-content-between align-items-center">
-    <div class="logo d-flex flex-column align-items-start">
+    <div class="logo">
       <a href="../index.html">
-        <img src="../imagens/icons/yume-logo.png" alt="Logo Yume">
+        <img src="../imagens/icons/yume-logo.png" alt="Logo Yume" />
       </a>
     </div>
-  
     <nav class="navbar navbar-expand-lg navbar-dark p-0">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,107 +34,91 @@
     </nav>
   </header>
 
-  <!-- Mensagem a cima do formumário -->
+  <!-- Título Contacto -->
+  <section class="titulo-pagina text-center py-4">
+  <h1 class="titulo-contacto">Contacto</h1>
+  </section>
+
+  <!-- Introdução -->
   <div class="container py-5">
-    <div class="row mb-4 text-center">
-      <div class="col-12">
-        <h5 class="mb-1">Tem alguma dúvida?</h5>
-        <p>- Deixe aqui a sua mensagem.</p>
+    <div class="row mb-4">
+      <div class="col-12 intro-text">
+        <p>Tens alguma questão ou pedido? -Fala connosco!</p>
       </div>
     </div>
 
-    <!-- Formulário de contacto -->
-    <div class="row align-items-center justify-content-center">
-      <div class="col-12 col-md-5">
+    <!-- Formulário e Informações -->
+    <div class="row g-4 align-items-stretch">
+      <!-- Formulário -->
+      <div class="col-12 col-md-6">
         <div class="form-container">
           <h5 class="mb-3 text-center">Formulário de Contacto</h5>
           <form id="contactForm">
             <div class="mb-3">
               <label for="nome" class="form-label">Nome:</label>
-              <input type="text" class="form-control" id="nome" required>
+              <input type="text" class="form-control" id="nome" required />
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email:</label>
-              <input type="email" class="form-control" id="email" required>
+              <input type="email" class="form-control" id="email" required />
             </div>
             <div class="mb-3">
               <label for="assunto" class="form-label">Assunto:</label>
-              <input type="text" class="form-control" id="assunto" required>
+              <input type="text" class="form-control" id="assunto" required />
             </div>
             <div class="mb-3">
               <label for="mensagem" class="form-label">Mensagem:</label>
               <textarea class="form-control" id="mensagem" rows="4" required></textarea>
             </div>
-            <button type="submit" class="btn btn-enviar">Enviar</button>
+            <div class="text-center">
+              <button type="submit" class="btn btn-enviar">Enviar</button>
+            </div>
           </form>
         </div>
       </div>
 
-      <!-- Informações de Contacto -->
-      <div class="col-12 col-md-5 info mt-4 mt-md-0">
-        <h5>Morada:</h5>
-        <p>
-          Rua da Alegria, nº543<br>
-          5555-555 Porto - Portugal
-        </p>
+      <!-- Informações -->
+      <div class="col-12 col-md-6">
+      <div class="info text-center">
+        <div class="info-content">
+          <h5>Morada:</h5>
+          <p>Rua da Alegria, nº543<br>5555-555 Porto - Portugal</p>
 
-        <h5>Contactos:</h5>
-        <p>
-          912912912<br>
-          yume@gmail.com
-        </p>
+          <h5>Contactos:</h5>
+          <p>911 111 111<br>yume@gmail.com</p>
 
-        <h5>Horários de funcionamento:</h5>
-        <p>
-          Seg a Sex<br>
-          11h30 - 15h00<br>
-          18h00 - 21h00
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- MAPA -->
-<section class="container py-5 text-center">
-  <h2 class="fw-bold mb-1">Localização no mapa</h2>
-  <div class="row g-5 py-5">
-    <div class="col-lg-12">
-      <div class="card shadow-lg border rounded bg-dark">
-        <div class="card-body p-4 align-items-center justify-content-center text-center">
-          <h3 class="card-title mb-4 text-white">Yume - Porto</h3>
-          <figure class="bg-light border rounded mb-4" style="height: 300px;" id="mapContainer">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.7593583438233!2d-8.607512!3d41.151451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2464f4c3616f15%3A0xb4f384c960b98214!2sRua%20da%20Alegria%20543%2C%204000-033%20Porto%2C%20Portugal!5e0!3m2!1spt-PT!2spt!4v1714936624102!5m2!1spt-PT!2spt"
-              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </figure>
+          <h5>Horários de Funcionamento:</h5>
+          <p>Terça a Domingo<br>11h30 - 15h00<br>18h00 - 23h30</p>
         </div>
       </div>
     </div>
+    </div>
   </div>
-</section>
 
-<!-- FOOTER -->
-<footer class="text-center text-white py-4">
-  <p class="footer-title"><strong>Segue-nos nas Redes Sociais</strong></p>
-  <div class="social-icons mb-2">
-    <a href="emConstrucao.html">
-      <img src="../imagens/index/facebook-icon.png" alt="Facebook" class="me-2 social-icon">
-    </a>
-    <a href="emConstrucao.html">
-      <img src="../imagens/index/instagram-icon.png" alt="Instagram" class="me-2 social-icon">
-    </a>
-    <a href="emConstrucao.html">
-      <img src="../imagens/index/x-icon.png" alt="X" class="social-icon">
-    </a>
-  </div>
-  <p>&copy; 2025 Yume. Todos os direitos reservados.</p>
-</footer>
+  <!-- Mapa -->
+  <section class="container py-5 text-center">
+  <h2 class="fw-bold mb-4">Localização no Mapa</h2>
+    <div class="map-wrapper">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.7593583438233!2d-8.607512!3d41.151451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2464f4c3616f15%3A0xb4f384c960b98214!2sRua%20da%20Alegria%20543%2C%204000-033%20Porto%2C%20Portugal!5e0!3m2!1spt-PT!2spt!4v1714936624102!5m2!1spt-PT!2spt"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-white py-4">
+    <p class="footer-title"><strong>Segue-nos nas Redes Sociais</strong></p>
+    <div class="social-icons mb-2">
+      <a href="emConstrucao.html"><img src="../imagens/index/facebook-icon.png" alt="Facebook" class="me-2 social-icon" /></a>
+      <a href="emConstrucao.html"><img src="../imagens/index/instagram-icon.png" alt="Instagram" class="me-2 social-icon" /></a>
+      <a href="emConstrucao.html"><img src="../imagens/index/x-icon.png" alt="X" class="social-icon" /></a>
+    </div>
+    <p>&copy; 2025 Yume. Todos os direitos reservados.</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/contacto.js"></script>
-  <!-- para add o SweetAlert2 no formulário de contacto -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
