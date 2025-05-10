@@ -1,63 +1,53 @@
 /* Ficheiro css do index (página principal) do website YUME - Restaurante Japonês */
 
 /* BASE */
+
+/* estilos do body */
 body {
   background-color: rgb(0,0,0); /* cor de fundo */
   margin: 0; /* remove as margens padrão do browser */
   padding: 0; /* remove o preenchimento interno padrão */
 }
 
+/* estilos dos títulos */
 h1, h2, h3 {
   font-family: 'Cormorant Garamond', serif; /* tipo de letra - para título e navbar vai ser a Cormorant Garamond */
   color: rgb(132, 151, 97) /* cor das letras */
 }
 
+/* estilos dos parágrafos */
 p {
   font-family: 'Noto Sans JP', sans-serif; /* tipo de letra - para parágrafos vai ser a Noto Sans JP */
   color: rgb(255,255,255); /* cor das letras */
 }
 
 /* HEADER */
-header {
-  display: flex; /* ativa o flexbox */
-  justify-content: space-between; /* coloca os elementos nas extremidades, dando um espaçamento central */
-}
 
+/* estilos para o logo Yume - japonês */
 header .logo img {
-  width: 220px;
-  height: auto;
-  transition: 0.3s ease;
-  cursor: pointer; /* ao clicar no logo irá direcionar para o index*/
+  width: 220px; /* largura do logo */
+  transition: 0.3s ease; /* transição para o hover */
+  cursor: pointer; /* elemento clicável */
 }
 
+/* estilos para o logo Yume - japonês ao passar o rato por cima*/
 header .logo img:hover {
-  transform: scale(1.05); /* ao passar com o rato o logo fica ligeiramente maior*/
-  filter: brightness(120%); /* aumenta o brilho*/
+  transform: scale(1.05); /* fica ligeiramente maior */
+  filter: brightness(120%); /* aumenta o brilho */
 }
 
-.navbar-nav .nav-link {
-  font-family: 'Cormorant Garamond', serif;
-  color: rgb(255,255,255);
-  font-size: 1.2rem; /*tamanho da letra*/
-  margin-right: 1rem;
-  text-transform: uppercase;
+/* estilos dos links da navbar */
+.nav-link {
+  font-family: 'Cormorant Garamond', serif; /* tipo de letra */
+  color: rgb(255,255,255); /* cor da letra */
+  font-size: 1.2rem; /* tamanho da letra */
+  margin-right: 1rem; /* margem á direita */
+  text-transform: uppercase; /* coloca o texto em maiúscula */
 }
 
-.navbar-nav .nav-link:hover {
+/* estilos dos links da navbar ao passar o rato por cima */
+.nav-link:hover {
   color: rgb(132, 151, 97);
-}
-
-/* botao do menu hamburger em sites responsivos */
-.navbar-toggler {
-  border: none;
-  padding: 0.25rem;
-}
-
-/*menu que se expande ao carregar no botão .navbar-toggler*/
-.navbar-collapse {
-  background-color: rgb(0,0,0);
-  padding: 1rem;
-  text-align: right;
 }
 
 /* CARROSSEL */
@@ -209,17 +199,6 @@ footer .social-icons a:hover img {
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center !important;
-    text-align: left;
-    padding: 1rem;
-  }
-
-  header .logo img {
-    width: 200px;
-  }
 
   .navbar-nav {
     align-items: flex-start;
