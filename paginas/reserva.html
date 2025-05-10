@@ -1,40 +1,54 @@
+<!-- Ficheiro html da reserva do website YUME - Restaurante Japonês -->
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reserva - Yume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YUME - Reserva</title>
+  <meta name = "author" content = "Ivanildo Silva">
+  <meta name = "description" content = "Sushi e comida japonesa num ambiente autêntico no restaurante Yume">
+  <meta name = "keywords" content = "restaurante, japonês, sushi, sashimi, ramen, comida japonesa, Yume, almoço, jantar, comida oriental, Porto, eventos, pratos">
+
   <!-- link para o favicon -->
   <link rel="icon" href="../imagens/icons/yume-logo.png" type="image/png">
   
+  <!-- link para o bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- link para a letra Cormorant Garamond -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/reserva.css" />
+
+  <!-- link para a letra Noto Sans JP -->    
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- link para o ficheiro css -->
+  <link rel="stylesheet" href="../css/reserva.css">
+
 </head>
 <body>
 
-<!-- Header com logo à esquerda e menu hamburguer à direita -->
-<header class="container py-4 d-flex justify-content-between align-items-center">
-  <div class="logo d-flex flex-column align-items-start">
-    <a href="../index.html">
-      <img src="../imagens/icons/yume-logo.png" alt="Logo Yume">
-    </a>
-  </div>
-
-  <nav class="navbar navbar-expand-lg navbar-dark p-0">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-      <ul class="navbar-nav text-end">
-        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-        <li class="nav-item"><a class="nav-link" href="reserva.html">Reserva</a></li>
-        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
-        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-      </ul>
+ <!-- Header com logo à esquerda e menu hamburguer à direita -->
+  <header class="container py-4 d-flex justify-content-between align-items-center">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../imagens/icons/yume-logo.png" alt="Logo Yume">
+      </a>
     </div>
-  </nav>
-</header>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark p-0">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav text-end">
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="reserva.html">Reserva</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
 <!-- rederizando o calendário com JS -->
 <div class="container text-center calendar">
@@ -53,6 +67,7 @@
     <tbody id="calendarBody"></tbody>
   </table>
 
+  <!-- botão selecionar número de pessoas -->
   <div class="row justify-content-center mt-4">
     <div class="col-md-4 mb-3">
       <label for="pessoas">Número de pessoas</label>
@@ -67,6 +82,8 @@
         <option>8 pessoas</option>
       </select>
     </div>
+
+    <!-- botão selecionar hora  -->
     <div class="col-md-4 mb-3">
       <label for="hora">Hora</label>
       <select id="hora" class="form-select">
@@ -77,16 +94,20 @@
         <option>18:00</option>
         <option>19:00</option>
         <option>20:00</option>
+        <option>21:00</option>
+        <option>22:00</option>
       </select>
     </div>
   </div>
 
+  <!--  botão reservar -->
   <div class="row justify-content-center mb-3">
     <div class="col-md-4">
       <button class="btn btn-reservar">RESERVAR</button>
     </div>
   </div>
 
+  <!-- botão solicitação de grupo a partir de 9 pessoas -->
   <div class="row justify-content-center">
     <div class="col-md-6">
       <a href="contacto.html"><button class="btn btn-outline-light w-100">Solicitação de grupo a partir de 9 pessoas</button></a>
@@ -95,23 +116,26 @@
 </div>
 
 <!-- FOOTER -->
-<footer class="text-center text-white py-4">
-  <p class="footer-title"><strong>Segue-nos nas Redes Sociais</strong></p>
-  <div class="social-icons mb-2">
-    <a href="../paginas/emConstrucao.html">
-      <img src="../imagens/index/facebook-icon.png" alt="Facebook" class="me-2 social-icon">
-    </a>
-    <a href="../paginas/emConstrucao.html">
-      <img src="../imagens/index/instagram-icon.png" alt="Instagram" class="me-2 social-icon">
-    </a>
-    <a href="../paginas/emConstrucao.html">
-      <img src="../imagens/index/x-icon.png" alt="X" class="social-icon">
-    </a>
-  </div>
-  <p>&copy; 2025 Yume. Todos os direitos reservados.</p>
-</footer>
+  <footer class="text-center py-4">
+        <h3><strong>Segue-nos nas Redes Sociais</strong></h3>
+        <div class="social-icons mb-2">
+            <a href="emConstrucao.html">
+                <img src="../imagens/index/facebook-icon.png" alt="Facebook" class="me-2 social-icon">
+            </a>
+            <a href="emConstrucao.html">
+                <img src="../imagens/index/instagram-icon.png" alt="Instagram" class="me-2 social-icon">
+            </a>
+            <a href="emConstrucao.html">
+                <img src="../imagens/index/x-icon.png" alt="X" class="social-icon">
+            </a>
+        </div>
+        <p>&copy; 2025 Yume. Todos os direitos reservados.</p>
+    </footer>
+  
+<!-- link para o bootstrap js -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../js/reserva.js"></script>
+<!-- link para o ficheiro js -->
+ <script src="../js/reserva.js"></script>
 </body>
 </html>
