@@ -142,7 +142,6 @@ h3 {
 /* estilos para os icons das redes sociais */
 .social-icons img {
   width: 48px; /* largura dos icons */
-  margin: 0 10px; /* margem vertical entre os icons para dar espaçamento entre eles */
   filter: brightness(200%); /* aumenta o brilho dos icons, para não ficarem muito escuros */
   transition: all 0.2s ease; /* transição para o hover */
   cursor: pointer; /* elemento clicável */
