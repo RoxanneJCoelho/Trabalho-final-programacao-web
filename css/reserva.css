@@ -46,75 +46,73 @@ header .logo img:hover {
 
 /* CALENDÁRIO */
 .calendar {
-  margin-top: 2rem;
+  margin-top: 2rem; /* margem superior responsiva */
 }
 
 .calendar table {
-  width: 100%;
-  border-collapse: collapse;
+  width: 100%; /* ocupa todo o espaço da largura */
+  border-collapse: collapse; /* sem bordas entre as células */
 }
 
 .calendar th,
 .calendar td {
-  padding: 0.75rem;
-  text-align: center;
-  border: 1px solid rgb(248, 255, 234); 
+  padding: 0.75rem; /* espaçamento interno responsivo */
+  border: 1px solid rgb(248, 255, 234); /* linha fina e bege */
 }
 
 .calendar td {
-  cursor: pointer; /* Mostra o apontador de mouse ao passar sobre as datas */
+  cursor: pointer; /* elemento clicável */
 }
 
+/* estilos para dias passados */
 .calendar .disabled {
-  color: #777;
-  pointer-events: none;
-  background-color: #1a1a1a;
-  cursor: not-allowed;
+  color: rgb(105, 96, 92);
+  pointer-events: none; /* não permite clicar */
+  background-color: rgb(39, 35, 33);
 }
 
-.calendar .active-day {
-  background-color: rgb(132, 151, 97);
-  color: black;
+/* estilos para dia selecionado */
+.selected-day {
+  background-color: rgb(132, 151, 97) !important;
+  color: rgb(0,0,0);
   font-weight: bold;
+  border: 2px solid rgb(255,255,255);
+  cursor: pointer;
 }
 
+/* estilos para botão Reservar */
 .btn-reservar {
   background-color: rgb(132, 151, 97);
   border: none;
-  color: white;
+  color: rgb(255,255,255);
   padding: 0.75rem 1.5rem;
   width: 100%;
   font-weight: bold;
 }
 
+/* estilos para botão Reservar ao passar o rato em cima */
 .btn-reservar:hover {
   background-color: rgb(132, 151, 97);
-  color: black;
+  color: rgb(0,0,0);
 }
 
+/* botões para mudar os meses do calendário */
 .btn-sm {
   background-color: rgb(132, 151, 97);
   border: none;
-  color: white;
+  color: rgb(255,255,255);
   padding: 0.5rem 1rem;
 }
 
+/* botão solicitação de grupo a partir de 9 pessoas */
+.btn-outline-light{
+  margin-bottom: 1vw; /* margem inferior responsiva, para o botão não ficar colado ao footer */
+}
+
+/* botão solicitação de grupo a partir de 9 pessoas ao passar com o rato em cima */
 .btn-outline-light:hover {
   background-color: rgb(132, 151, 97);
-  color: black;
-}
-
-select, option {
-  color: black;
-}
-
-
-.selected-day {
-  background-color: rgb(132, 151, 97) !important;
-  color: black;
-  font-weight: bold;
-  border: 2px solid white;
-  cursor: pointer;
+  color: rgb(0,0,0);
 }
 
 /* FOOTER */
