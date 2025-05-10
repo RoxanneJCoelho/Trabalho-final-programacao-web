@@ -11,6 +11,7 @@ body {
   padding: 0; /* remove o preenchimento interno padrão */
 }
 
+/* estilos dos títulos */
 h2, h3, h4 {
   font-family: 'Cormorant Garamond', serif; /* tipo de letra - para título e navbar vai ser a Cormorant Garamond */
 }

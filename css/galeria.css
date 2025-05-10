@@ -1,57 +1,47 @@
+/* Ficheiro css da galeria do website YUME - Restaurante Japonês */
+
 /* BASE */
+
+/* estilos do body */
 body {
-  background-color: #000;
-  color: white;
-  font-family: 'Noto Sans JP', sans-serif;
-  margin: 0;
-  padding: 0;
+  background-color: rgb(0,0,0); /* cor de fundo */
+  color: rgb(255,255,255); /* cor das letras */
+  margin: 0; /* remove as margens padrão do browser */
+  padding: 0; /* remove o preenchimento interno padrão */
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Cormorant Garamond', serif;
+/* estilos dos títulos */
+h1, h3, h5{
+  font-family: 'Cormorant Garamond', serif; /* tipo de letra - para título e navbar vai ser a Cormorant Garamond */
 }
 
 /* HEADER */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-}
 
+/* estilos para o logo Yume - japonês */
 header .logo img {
-  width: 220px;
-  height: auto;
-  transition: 0.3s ease;
-  cursor: pointer;
+  width: 220px; /* largura do logo */
+  transition: all 0.3s ease; /* transição para o hover */
+  cursor: pointer; /* elemento clicável */
 }
 
+/* estilos para o logo Yume - japonês ao passar o rato por cima*/
 header .logo img:hover {
-  transform: scale(1.05);
-  filter: brightness(120%);
+  transform: scale(1.05); /* fica ligeiramente maior */
+  filter: brightness(120%); /* aumenta o brilho */
 }
 
-.navbar-nav .nav-link {
-  font-family: 'Cormorant Garamond', serif;
-  color: white !important;
-  font-size: 1.2rem;
-  margin-right: 1rem;
-  text-transform: uppercase;
+/* estilos dos links da navbar */
+.nav-link {
+  font-family: 'Cormorant Garamond', serif; /* tipo de letra */
+  color: rgb(255,255,255); /* cor da letra */
+  font-size: 1.2rem; /* tamanho da letra */
+  margin-right: 1rem; /* margem á direita */
+  text-transform: uppercase; /* coloca o texto em maiúscula */
 }
 
-.navbar-nav .nav-link:hover {
-  color: rgb(132, 151, 97) !important;
-}
-
-.navbar-toggler {
-  border: none;
-  padding: 0.25rem;
-}
-
-.navbar-collapse {
-  background-color: #000;
-  padding: 1rem;
-  text-align: right;
+/* estilos dos links da navbar ao passar o rato por cima */
+.nav-link:hover {
+  color: rgb(132, 151, 97);
 }
 
 /* GALERIA */
@@ -84,7 +74,7 @@ header .logo img:hover {
   padding: 0.75rem 1rem;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.5rem;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -144,57 +134,33 @@ footer p {
   font-size: 0.8rem; /* tamanho da letra mais pequeno */
 }
 
-/* RESPONSIVO */
+/* RESPONSIVO  - para telas até 768px de largura */
+
 @media (max-width: 768px) {
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center !important;
-    text-align: left;
-    padding: 1rem;
-  }
-
   header .logo img {
-    width: 200px;
+    width: 170px; /* a largura do logo passa para 170px */
+  }
+  .navbar-nav {
+    align-items: flex-start; /* alinha a navbar no topo */
   }
 
-  .navbar-nav {
-    align-items: flex-start;
+  .navbar-nav .nav-link {
+    font-size: 1rem; /* o tamanho das letras do navbar passa a 1rem */
   }
 
   .navbar-toggler {
-    margin-left: auto;
+    margin-left: auto; /* coloca o botão hamburger do lado direito */
   }
 
-  .modal-body .img-container {
-    height: 180px;
-  }
-
-  .galeria-label {
-    font-size: 1.2rem;
-  }
-
-  footer .social-icons img.social-icon {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-@media (max-width: 480px) {
-  header .logo img {
-    width: 180px;
+  .social-icons img {
+    width: 36px; /* a largura dos icons passa a 36px*/
   }
 
   .modal-body .img-container {
     height: 160px;
   }
 
-  .navbar-nav .nav-link {
-    font-size: 1rem;
-  }
-
-  footer .social-icons img.social-icon {
-    width: 40px;
-    height: 40px;
+  .galeria-label {
+    font-size: 1.2rem;
   }
 }
