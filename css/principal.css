@@ -1,55 +1,61 @@
+/* Ficheiro css do index (página principal) do website YUME - Restaurante Japonês */
+
 /* BASE */
 body {
-  background-color: #000;
-  color: white;
-  font-family: 'Noto Sans JP', sans-serif;
-  margin: 0;
-  padding: 0;
+  background-color: rgb(0,0,0); /* cor de fundo */
+  margin: 0; /* remove as margens padrão do browser */
+  padding: 0; /* remove o preenchimento interno padrão */
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Cormorant Garamond', serif;
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif; /* tipo de letra - para título e navbar vai ser a Cormorant Garamond */
+  color: rgb(132, 151, 97) /* cor das letras */
+}
+
+p {
+  font-family: 'Noto Sans JP', sans-serif; /* tipo de letra - para parágrafos vai ser a Noto Sans JP */
+  color: rgb(255,255,255); /* cor das letras */
 }
 
 /* HEADER */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
+  display: flex; /* ativa o flexbox */
+  justify-content: space-between; /* coloca os elementos nas extremidades, dando um espaçamento central */
 }
 
 header .logo img {
   width: 220px;
   height: auto;
   transition: 0.3s ease;
-  cursor: pointer;
+  cursor: pointer; /* ao clicar no logo irá direcionar para o index*/
 }
 
 header .logo img:hover {
-  transform: scale(1.05);
-  filter: brightness(120%);
+  transform: scale(1.05); /* ao passar com o rato o logo fica ligeiramente maior*/
+  filter: brightness(120%); /* aumenta o brilho*/
 }
 
 .navbar-nav .nav-link {
   font-family: 'Cormorant Garamond', serif;
-  color: white !important;
-  font-size: 1.2rem;
+  color: rgb(255,255,255);
+  font-size: 1.2rem; /*tamanho da letra*/
   margin-right: 1rem;
   text-transform: uppercase;
 }
 
 .navbar-nav .nav-link:hover {
-  color: rgb(132, 151, 97) !important;
+  color: rgb(132, 151, 97);
 }
 
+/* botao do menu hamburger em sites responsivos */
 .navbar-toggler {
   border: none;
   padding: 0.25rem;
 }
 
+/*menu que se expande ao carregar no botão .navbar-toggler*/
 .navbar-collapse {
-  background-color: #000;
+  background-color: rgb(0,0,0);
   padding: 1rem;
   text-align: right;
 }
@@ -79,25 +85,15 @@ header .logo img:hover {
   width: 8%;
 }
 
-@media (max-width: 576px) {
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    width: 36px;
-    height: 36px;
-    background-size: 60% 60%;
-  }
-}
-
 /* SOBRE NÓS */
 .sobre-nos h2 {
-  font-family: 'Cormorant Garamond', serif;
-  color: #AAC74F;
+  color: rgb(132, 151, 97);
   font-size: 2.2rem;
 }
 
 .sobre-nos p {
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 2; /* espacamento entre linhas*/
 }
 
 .igual-altura,
@@ -105,51 +101,37 @@ header .logo img:hover {
   background-color: rgba(170, 199, 79, 0.2);
   padding: 2rem;
   border-radius: 10px;
-  border: 3px solid #AAC74F;
-  height: 100%;
+  border: 3px solid rgb(132, 151, 97);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: column; 
+  justify-content: center; 
 }
 
 .img-container {
-  padding: 0;
-  overflow: hidden;
+  padding: 0; /*remove o preenchimento interno*/
 }
 
 .img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100%; /*imagem ocupa toda a largura*/
   border-radius: 8px;
 }
 
+/* Garante que as colunas na grid da secção tenham altura igual */
 .sobre-nos .row.g-4 > div {
   display: flex;
 }
 
-.sobre-nos .igual-altura,
-.sobre-nos .img-container {
-  width: 100%;
-}
-
 .yume-highlight {
-  color: #AAC74F;
+  color: rgb(164, 199, 98);
   font-weight: bold;
 }
 
-@media (max-width: 767.98px) {
-  .igual-altura,
-  .img-container {
-    min-height: 300px;
-  }
-}
 
 /* SECÇÃO INFORMAÇÕES */
 .info-section {
   padding: 4rem 1rem;
-  background-color: #000;
-  color: white;
+  background-color: rgb(0,0,0);
+  color: rgb(255,255,255);
 }
 
 .info-section .row {
@@ -164,8 +146,7 @@ header .logo img:hover {
 
 .info-section h5 {
   font-size: 1.6rem;
-  color: #849761;
-  font-family: 'Cormorant Garamond', serif;
+  color: rgb(132, 151, 97);
 }
 
 
@@ -252,6 +233,15 @@ footer .social-icons a:hover img {
     max-height: 350px;
   }
 
+  @media (max-width: 576px) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 36px;
+    height: 36px;
+    background-size: 60% 60%;
+  }
+}
+
   footer .social-icons img.social-icon {
     width: 36px;
     height: 36px;
@@ -282,5 +272,11 @@ footer .social-icons a:hover img {
 
   .seta-topo {
     width: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .igual-altura,
+  .img-container {
+    min-height: 300px;
   }
 }
