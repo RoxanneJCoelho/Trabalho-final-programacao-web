@@ -46,12 +46,11 @@ header .logo img:hover {
 
 /* GALERIA */
 .galeria-box {
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 10px;
-  border: 2px solid rgb(132, 151, 97);
-  transition: transform 0.3s ease;
+  position: relative; /* permite colocar elementos filhos de uma forma mais simples */
+  cursor: pointer; /* elemento clicável */
+  border-radius: 10px; /* bordas arredondadas*/
+  border: 2px solid rgb(132, 151, 97); /* cor e espessura da borda */
+  transition: transform 0.3s ease; /* transição para o hover */
 }
 
 .galeria-box:hover {
@@ -59,10 +58,9 @@ header .logo img:hover {
 }
 
 .galeria-box img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
+  width: 100%; /* ocupa toda a largura */
+  display: block; /* elemento de bloco */
+  border-radius: 10px; /* bordas arredondadas */
 }
 
 .galeria-label {
@@ -156,11 +154,11 @@ footer p {
     width: 36px; /* a largura dos icons passa a 36px*/
   }
 
-  .modal-body .img-container {
-    height: 160px;
+  .img-container {
+    height: 160px; /* a altura do container passa a 160px */
   }
 
   .galeria-label {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* o tamanho da letra passa a 1.2rem*/
   }
 }
