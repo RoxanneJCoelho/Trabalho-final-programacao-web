@@ -1,46 +1,50 @@
+/* Ficheiro css da página em construção do website YUME - Restaurante Japonês */
+
+/* BASE */
+
+/* estilos do body */
 body {
-    background-color: #000;
-    color: white;
-    font-family: 'Noto Sans JP', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+    background-color: rgb(0, 0, 0); /* cor de fundo */
+    color: rgb(255,255,255); /* cor das letras */
+    font-family: 'Noto Sans JP', sans-serif; /* tipo de letra - para parágrafos e botões vai ser a Noto Sans JP */
+    display: flex; /* ativa o flexbox */
+    align-items: center; /* centraliza os elementos horizontalmente */
+    justify-content: center; /* centraliza os elementos verticalmente */
+    height: 100vh; /* altura de 100vh */
+    margin: 0; /* remove margens padrão do browser */
   }
-  
+ 
+ /* estilos do container */ 
   .container {
-    text-align: center;
-    padding: 2rem;
+    text-align: center; /* alinhar o texto no centro */
+    padding: 2rem; /* espaçamento interno responsivo para não ficar colado ás bordas */
   }
   
   h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 3rem;
-    color: rgb(132, 151, 97);
-    margin-bottom: 1rem;
+    font-family: 'Cormorant Garamond', serif; /* tipo de letra - para título e navbar vai ser a Cormorant Garamond */
+    font-size: 3rem; /* tamanho de letra responsivo */
+    color: rgb(132, 151, 97); /* cor das letras */
+    margin-bottom: 1rem; /* margem inferior responsiva para o texto do título não ficar colado ao parágrafo */
   }
   
   p {
-    font-size: 1.2rem;
-    color: #ccc;
-    margin-bottom: 2rem;
+    font-size: 1.2rem; /* tamanho de letra responsivo */
+    margin-bottom: 2rem; /* margem inferior responsiva para o texto do parágrafo não ficar colado ao botão */
   }
   
   .btn-voltar {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1rem;
-    background-color: transparent;
-    color: white;
-    border: 1px solid rgb(132, 151, 97);
-    border-radius: 5px;
+    display: inline-block; /* permite definir padding */
+    padding: 0.75rem 1.5rem; /* aspeto alongado */
+    font-size: 1rem; /* tamanho de letra responsivo */
+    background-color: transparent; /* cor de fundo é a mesma que o body */
+    color: rgb(255,255,255); /* cor das letras */
+    border: 1px solid rgb(132, 151, 97); /* cor e espessura das bordas */
+    border-radius: 5px; /* bordas arrendondadas */
     text-decoration: none;
-    transition: background 0.3s, color 0.3s;
+    transition: all 0.3s ease;
   }
   
   .btn-voltar:hover {
     background-color: rgb(132, 151, 97);
-    color: #000;
+    color: rgb(0,0,0);
   }
